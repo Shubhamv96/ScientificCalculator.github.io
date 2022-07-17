@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sci Calculator</title>
+    <link rel="stylesheet" type="text/css"href="./lightcal.css" id="theme">
+    <link rel="stylesheet" type="text/css" href="./radian.css" id="colchange">
+</head>
+<body>
+    
+    <div class="container">
+        <div id="choose">
+            <input type="button" value="radian" id="workingtype" onclick="working()">
+        </div>
+        <div id="toggle">
+            <input type="button" value="Dark theme" id="switch" onclick="togglemode()">
+        </div>
+        <h1> SCIENTIFIC CALCULATOR</h1>
+        <form name="forms">
+            <div class="calc">
+                <input type="text" value="" name="screen" id="answer" disabled placeholder="">
+                <input type="button" id="ac" value="AC" onclick="clearresult()">
+                <input type="button" value="sin" onclick="sinvalue()">
+                <input type="button" value="(" onclick="calculate('(')">
+                <input type="button" value=")" onclick="calculate(')')">
+                <input type="button" value="√" onclick="squareroot()">
+                
+                <br>
+                <input type="button" value="1" onclick="calculate(1)">
+                <input type="button" value="2" onclick="calculate(2)">
+                <input type="button" value="3" onclick="calculate(3)">
+                <input type="button" value="+" onclick="calculate('+')">
+                <input type="button" value="cos" onclick="cosvalue()">
+                <input type="button" value="ln" onclick="naturallog()">
+                <input type="button" value="x^" onclick="xpowery()">
+                <input type="button" value="e^x" onclick="epowerx()">
+                <br>
+                <input type="button" value="4" onclick="calculate(4)">
+                <input type="button" value="5" onclick="calculate(5)">
+                <input type="button" value="6" onclick="calculate(6)">
+                <input type="button" value="-" onclick="calculate('-')">
+                <input type="button" value="tan" onclick="tanvalue()">
+                <input type="button" value="π" onclick="pivalue()">
+                <input type="button" value="sin-1" onclick="sineinv()">
+                <input type="button" value="10^x" onclick="tenpowerx()">
+                <br>
+                <input type="button" value="7" onclick="calculate(7)">
+                <input type="button" value="8" onclick="calculate(8)">
+                <input type="button" value="9" onclick="calculate(9)">
+                <input type="button" value="*" onclick="calculate('*')">
+                <input type="button" id="ce" value="⌫" onclick="clearlast()">
+                <input type="button" value="e" onclick="evalue()">
+                <input type="button" value="cos-1"  onclick="cosinv()">
+                <input type="button" value="x^2" onclick="xsquare()">
+                <br>
+                <input type="button" value="÷" onclick="calculate('/')">
+                <input type="button" value="0" onclick="calculate(0)">
+                <input type="button" value="." onclick="calculate('.')">
+                <input type="button" id="eval" value="=" onclick="equals()">
+                <input type="button" value="log" onclick="logbase10()">
+                <input type="button" value="x!" onclick="factorialvalue()">
+                <input type="button" value="tan-1" onclick="taninv()">
+                <input type="button" value="," onclick="comma(',')">
+                <br>
+
+
+
+            </div>
+        </form>
+
+    </div>
+    <script src="main.js"></script>
+    <script src="trignometricradian.js" id="chooseworking"></script>
+    
+
+    
+</body>
+</html>
